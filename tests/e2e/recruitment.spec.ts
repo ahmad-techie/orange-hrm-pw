@@ -1,12 +1,14 @@
 import { test, expect, BrowserContext, Page } from '@playwright/test';
+import { Employee } from "../../utils/types";
 
-const employee = {
+const employee: Employee = {
     firstName: "Sarah",
     lastName: "Baldini"
 }
 
 const updatedEmail = `${employee.firstName} ${employee.lastName}@gmail.com`;
 
+//Run all tests for this file in serial mode as one is dependent on the other
 test.describe.configure({ mode: 'serial' });
 
 test('should land to Recruitment page', async ({page}) => {

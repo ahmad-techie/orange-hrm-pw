@@ -7,7 +7,7 @@ test('should land to Leave page', async ({page}) => {
 
 test.describe('assign leave', ()=>{
 
-    test.skip('should display error message for employees whith no acrued leave', async ({page}) => {
+    test('should display error message for employees whith no acrued leave', async ({page}) => {
         await page.goto('leave/viewLeaveList');
 
     });

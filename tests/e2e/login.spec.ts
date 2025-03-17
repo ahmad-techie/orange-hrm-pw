@@ -5,7 +5,7 @@ test.describe('login page', async () => {
     await page.goto('auth/login');
   });
 
-  test('should navigate to the login page when entering the correct url', async ({ page }) => {
+  test('should navigate to the login page when entering the correct url @smoke', async ({ page }) => {
     await expect(page.getByRole('heading', {name: 'Login'})).toBeVisible();
   });
 
