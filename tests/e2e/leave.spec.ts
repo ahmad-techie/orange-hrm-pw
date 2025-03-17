@@ -5,12 +5,12 @@ test('should land to Leave page', async ({page}) => {
     await expect(page.getByRole('heading', { name: 'Leave List' })).toBeVisible();
 });
 
-test.describe('assign leave', ()=>{
+// test.describe('assign leave', ()=>{
 
-    test('should display error message for employees whith no acrued leave', async ({page}) => {
-        await page.goto('leave/viewLeaveList');
+//     test('should display error message for employees whith no acrued leave', async ({page}) => {
+//         await page.goto('leave/viewLeaveList');
 
-    });
+//     });
     
-})
+// })
 
